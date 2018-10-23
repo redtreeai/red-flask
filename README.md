@@ -10,6 +10,22 @@ Restful framework base on flask without blueprint.
 
 Sqlalchemy和Redis。提供了Flask作为Https服务的解决方案。解决了Flask跨域问题。
 
+#### 通过PIP快速构建redflask工程
+
+1. pip install redflask==0.1.5
+2. redflask -b [your_project_name]
+
+#### 通过github获取源码
+
+1. 使用 git clone 命令将项目复制到本地
+2. pip install -r requirements.txt 安装所有依赖
+
+#### 使用说明
+
+1. 本地调试，直接python run.py (请在setting.yaml中配置IP为localhost)
+2. 部署调试，chmod +x test.sh  然后 ./test.sh
+3. 部署生产, chmod +x start.sh 然后 ./start.sh
+
 #### 软件架构
 
 controller : 路由控制器，用来注解并分配工程的api地址和分发对应的接口任务，其作用类似于Java SpringBoot 中的restcontroller.子下的文件目录根据对应业务类型进行区分
@@ -41,18 +57,6 @@ test.sh 测试脚本
 configm.py  Gunicorn网络模型配置脚本
 
 setting.yaml  用于自适应部署的配置文件
-
-#### 安装教程
-
-1. 使用 git clone 命令将项目复制到本地
-2. pip install -r requirements.txt 安装所有依赖
-
-
-#### 使用说明
-
-1. 本地调试，直接python run.py (请在setting.yaml中配置IP为localhost)
-2. 部署调试，chmod +x test.sh  然后 ./test.sh
-3. 部署生产, chmod +x start.sh 然后 ./start.sh
 
 #### 参与贡献
 
