@@ -46,7 +46,7 @@ ROOT_PATH = str(ROOT_PATH).replace('\n','')
 # engine_mysql = create_engine(_mysql.DB_URI, echo=False, pool_recycle=3600) # 创建引擎
 # Base_mysql = declarative_base(engine_mysql)
 # DBSession_mysql = sessionmaker(bind=engine_mysql) # sessionmaker生成一个session类 此后DBSession_mysql将可在全局作为一个数据库会话对象持续服务,不用重复创建
-#
+
 
 '''
 所有的控制器在此处注册方可生效
