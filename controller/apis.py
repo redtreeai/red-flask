@@ -1,7 +1,14 @@
 # -*- coding: utf-8 -*-
 '''
 flask作为restful服务时，常用的一些接口类型
+
+在实际产品的操作中，应该在业务逻辑的执行写在service目录下，在通过controller进行对应的调用，
+调用之前利用utils/http_response.py封装 的get_param_check()函数 或 post_param_check()函数进行参数校验。
+
 '''
+
+
+
 from __init__ import app
 from __init__ import request,send_from_directory
 import json
@@ -65,3 +72,6 @@ def get1a():
 def get2a():
    page = request.args.get('page')
    return 'this is page'+str(page)
+
+
+

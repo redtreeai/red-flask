@@ -62,3 +62,23 @@ setting.yaml  用于自适应部署的配置文件
 
 感谢航小妈提供的部分架构思路
 
+##版本更新日志
+
+20190802 
+
+1  添加常用的正则校验工具  utils/common/regex_matcher.py
+
+2  添加redis常用的操作函数 utils/common/redisor.py
+
+3  添加文本相似度通用算法工具  utils/common/text_similarity.py
+
+4  添加xls，excel文本读写工具  utils/common/xls_tool.py
+
+5  添加Flask框架对用户请求的参数校验工具及错误类型封包 utils/http/responser.py
+
+
+其实在企业应用中，这套框架已经完善到了一个兼容性很强的版本，包含在各类前后端分离项目，移动端项目的应用，以及人工智能在线教育项目的应用。
+
+特别是在权限管控，资源分配等任务中，可以很自由的添加自己的设计模式，以及兼容一些类似jupyterhub,或者云虚拟机调度服务。
+
+如果有人感兴趣的话，可以一起完善这套框架，或者说有什么需求，也可以在issues里提出来，我会抽空更新。

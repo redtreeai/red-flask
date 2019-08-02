@@ -2,7 +2,7 @@
 # @Time    : 18-8-8 下午3:43
 # @Author  : Redtree
 # @File    : sys_user.py
-# @Desc : 实验平台系统用户表
+# @Desc : 系统用户表orm构造(只是个模板)
 
 
 import json
