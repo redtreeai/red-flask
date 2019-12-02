@@ -94,8 +94,7 @@ setting.yaml  用于自适应部署的配置文件
 
 #### 即将更新
 
-1 celery/rabbitMQ 消息队列模块 (丰富案例)
+1 python-elasticsearch-api demo
 
-2 logging模块 （体验优化）
+2 实现一个简易ORM
 
-3 构造一个使用更便捷的ORM框架。

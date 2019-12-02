@@ -6,3 +6,4 @@ Gevent
 redis
 pika
 celery
+elasticsearch
