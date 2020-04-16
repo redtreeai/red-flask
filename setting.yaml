@@ -3,7 +3,7 @@ SERVER_NAME : sleepingtree
 SERVER_PORT : 5000
 
 VERSION : v0.15
-DESCRIPTION :
+DESCRIPTION : freestyle coding framework
 
 #数据库常量配置
 USER_SALT_LENGTH : 4
