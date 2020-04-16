@@ -13,7 +13,7 @@ SECRET_KEY='~XHH!jmN]LWX/,?RTA0Zr98j/3yX R'
 #mysql数据库连接信息,这里改为自己的账号  #直连模式启动
 HOSTNAME = '127.0.0.1'
 PORT = '3310'
-DATABASE = 'dbname'
+DATABASE = 'testdb'
 USERNAME = 'root'
 PASSWORD = 'root'
 #链接模式

@@ -7,3 +7,8 @@ redis
 pika
 celery
 elasticsearch
+xlrd
+websockets
+pyyaml
+flask-cors
+tornado

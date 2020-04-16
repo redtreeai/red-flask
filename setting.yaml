@@ -1,2 +1,18 @@
 SERVER_IP : localhost
 SERVER_NAME : sleepingtree
+SERVER_PORT : 5000
+
+VERSION : v0.15
+DESCRIPTION :
+
+#数据库常量配置
+USER_SALT_LENGTH : 4
+PAGE_LIMIT : 10
+DEFAULT_PAGE : 1
+
+#字符串编码格式
+STRING_CODE : utf-8
+#加密方式名
+ENCRYPTION_SHA1 : sha1
+#token过期时间配置(默认一周 604800/测试的时候5分钟)
+TOKEN_EXPIRE: 604800
