@@ -59,7 +59,13 @@ from sqlalchemy.orm import sessionmaker
 
 from database.sqlalchemy import _mysql  # 连接数据库的数据
 
-engine_mysql = create_engine(_mysql.DB_URI, echo=False, pool_recycle=3600) # 创建引擎
+engine_mysql = create_engine(_mysql.DB_URI,  pool_pre_ping=True,
+    echo=False,
+    max_overflow=5,  # 超过连接池大小外最多创建的连接
+    pool_size=10,  # 连接池大小
+    pool_timeout=30,  # 池中没有线程最多等待的时间，否则报错
+    pool_recycle=3600  # 多久之后对线程池中的线程进行一次连接的回收（重置）
+ ) # 创建引擎
 Base_mysql = declarative_base(engine_mysql)
 DBSession_ams_mysql = sessionmaker(bind=engine_mysql) # sessionmaker生成一个session类 此后DBSession_mysql将可在全局作为一个数据库会话对象持续服务,不用重复创建
 
