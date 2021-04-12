@@ -8,7 +8,7 @@
     数据库ORm使用flask_sqlalchemy,迁移工具使用flask_migrate(旧版本的sqlalchemy已弃用)
     提供了Flask作为Https服务的解决方案。解决了Flask跨域问题。双系统生产化部署(windows/linux)。
 
-#### 通过PIP快速构建redflask工程
+#### 通过PIP快速构建redflask工程【Only For LINUX】
 
     1. pip install redflask==0.1.5
     2. redflask -b [your_project_name]
