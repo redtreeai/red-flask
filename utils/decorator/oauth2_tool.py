@@ -8,8 +8,9 @@
 import time
 import base64
 import hmac
-from __init__ import TOKEN_EXPIRE,request
+from __init__ import request
 from utils.http import responser
+from config import TOKEN_EXPIRE
 import json
 
 

@@ -12,7 +12,7 @@ flask作为restful服务时，常用的一些接口类型
 from __init__ import app
 from __init__ import request,send_from_directory
 import json
-from utils.decorator.token_maneger import auth_check
+from utils.decorator.oauth2_tool import oauth2_check
 
 #最简单的接口
 @app.route('/',methods=['GET'])
@@ -62,13 +62,13 @@ def download():
 # 另外,当工程中含有多个auth_check装饰的接口时，需要添加不同的节点命名
 
 @app.route('/api/get1',endpoint='getn1' ,methods=['GET'])
-@auth_check
+@oauth2_check
 def get1a():
    page = request.args.get('page')
    return 'this is page'+str(page)
 
 @app.route('/api/get2',endpoint='getn2' ,methods=['GET'])
-@auth_check
+@oauth2_check
 def get2a():
    page = request.args.get('page')
    return 'this is page'+str(page)
