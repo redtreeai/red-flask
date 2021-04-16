@@ -23,16 +23,7 @@ def dojob():
 
     '''
     执行dojob函数，获得如下输出：
-      def __init__ (self,uuid,username,nickname,salt,password,del_flag,created_time,updated_time,created_user):
-     self.uuid = uuid
-     self.username = username
-     self.nickname = nickname
-     self.salt = salt
-     self.password = password
-     self.del_flag = del_flag
-     self.created_time = created_time
-     self.updated_time = updated_time
-     self.created_user = created_user
+      
      def __repr__(self):
       obj={
          "uuid" : self.uuid,
@@ -53,20 +44,7 @@ Process finished with exit code 0
 
     lines = class_data.split('\n')
     #initlist
-    r1 = "  def __init__ (self,"
-    for l in lines:
-        if l.__contains__('='):
-            name = l.split('=')[0].replace(' ', '')
-            if not name=='mp_id':
-                r1=r1+''+name+','
-    r1 = r1[:-1]
-    r1 = r1+'):'
-    print(r1)
-    for l in lines:
-        if l.__contains__('='):
-            name = l.split('=')[0].replace(' ', '')
-            if not name=='mp_id':
-                print("     "+'self.' + name + ' = ' + name)
+ 
     r2 = "  def __repr__(self):"
     print(r2)
     r3 = "      obj={"
