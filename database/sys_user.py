@@ -23,17 +23,7 @@ class Sys_user(db.Model):
     updated_time=db.Column(db.Integer,comment='')
     created_user = db.Column(db.String(50),comment='')
 
-    def __init__(self, uuid, username, nickname, salt, password, del_flag, created_time, updated_time, created_user):
-        self.uuid = uuid
-        self.username = username
-        self.nickname = nickname
-        self.salt = salt
-        self.password = password
-        self.del_flag = del_flag
-        self.created_time = created_time
-        self.updated_time = updated_time
-        self.created_user = created_user
-
+  
     def __repr__(self):
         obj = {
             "uuid": self.uuid,
